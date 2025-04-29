@@ -79,6 +79,28 @@ p {
 color: #515154;
 line-height: 1.5;
 }
+.course-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.course-content img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.course-content iframe {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 </style>
 </head>
 <body>
@@ -89,135 +111,434 @@ line-height: 1.5;
 
     <button id="backButton" class="back-button">戻る</button>
 
-    <!-- トップページ（コース一覧） -->
+    <!-- トップページ　パソコンorスマホ -->
     <div id="mainPage">
-        <h2>講座一覧</h2>
+        <h2>お困りごとはパソコンですか？スマホですか？</h2>
         <div class="course-grid">
-            <div class="course-item" data-course="word">
+            <div class="course-item" data-course="PC">
+                <h3>パソコン</h3>
+                <p>パソコンの使い方</p>
+            </div>
+            <div class="course-item" data-course="sumaho">
+                <h3>スマートフォン</h3>
+                <p>スマートフォンの使い方</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- パソコン選択ページ -->
+    <div id="PCPage">
+        <div class="course-grid">
+            <div class="course-item" data-course="beginner">
+                <h3>初心者講座</h3>
+                <p>パソコン初心者からのおすすめ講座</p>
+            </div>
+            <div class="course-item" data-course="office">
+                <h3>office講座</h3>
+                <p>WordやExcelの使い方講座</p>
+            </div>
+            <div class="course-item" data-course="MOS">
+                <h3>資格取得講座</h3>
+                <p>MOS講座一覧</p>
+            </div>
+            <div class="course-item" data-course="hobby">
+                <h3>趣味講座</h3>
+                <p>パソコンを活用しよう！</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 初心者講座詳細ページ -->
+    <div id="beginnerPage" class="course-detail">
+        <h2>初心者講座一覧</h2>
+        <div class="course-list">
+            <h3>マウス講座</h3>
+            <p>マウス操作は、パソコンを使いこなす第一歩です！<br>
+                マウスの正しい持ち方からクリック、ダブルクリック、ドラッグなどマウスの基本操作を学習します。<br>
+                マウス上達のコツもたくさん盛り込んでいますので、パソコン初心者の方はもちろん「実はマウス操作が苦手」「もっとマウス操作をスムーズにしたい」という方にもおすすめの講座です。</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>キーボード講座</h3>
+            <p>キーボード練習</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>windows11導入</h3>
+            <p>Windows11練習</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>windows11パソコン整理術</h3>
+            <p>ファイル整理練習</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>windows11活用</h3>
+            <p>活用講座</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>デジタル基礎</h3>
+            <p>デジタル基礎講座</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+    </div>
+
+    <!-- office選択ページ -->
+    <div id="officePage">
+        <div class="course-grid">
+            <div class="course-item" data-course="Word">
                 <h3>Word講座</h3>
-                <p>文書作成の基本から応用まで</p>
+                <p>Wordの勉強</p>
             </div>
-            <div class="course-item" data-course="excel">
+            <div class="course-item" data-course="Excel">
                 <h3>Excel講座</h3>
-                <p>表計算とデータ分析の技術</p>
+                <p>Excelの勉強</p>
             </div>
-            <div class="course-item" data-course="powerpoint">
+            <div class="course-item" data-course="PowerPoint">
                 <h3>PowerPoint講座</h3>
-                <p>効果的なプレゼンテーション作成</p>
-            </div>
-            <div class="course-item" data-course="internet">
-                <h3>インターネット活用講座</h3>
-                <p>安全なネット利用とメール</p>
+                <p>PowerPointの勉強</p>
             </div>
         </div>
     </div>
 
     <!-- Word講座詳細ページ -->
-    <div id="wordPage" class="course-detail">
+    <div id="WordPage" class="course-detail">
         <h2>Word講座一覧</h2>
         <div class="course-list">
-            <h3>Word入門編</h3>
-            <p>文書作成の基本操作を学びます。</p>
+            <h3>Word2021入門講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
         <div class="course-list">
-            <h3>Word基本編</h3>
-            <p>表や画像の挿入、スタイルの活用など応用技術を習得します。</p>
+            <h3>Word2021基本講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>Word2021活用講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>ビジネスWord基礎・応用</h3>
+            <p>活用講座</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
     </div>
 
     <!-- Excel講座詳細ページ -->
-    <div id="excelPage" class="course-detail">
+    <div id="ExcelPage" class="course-detail">
         <h2>Excel講座一覧</h2>
         <div class="course-list">
-            <h3>Excel入門編</h3>
-            <p>表作成と基本関数の使い方を学びます。</p>
+            <h3>Excel2021入門講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
         <div class="course-list">
-            <h3>Excel基本編</h3>
-            <p>実務で役立つ様々な関数とその活用法を学びます。</p>
+            <h3>Excel2021基本講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>Excel2021活用講座</h3>
+            <p>Wordの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>ビジネスExcel基礎</h3>
+            <p>活用講座</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>ビジネスExcel関数・分析</h3>
+            <p>活用講座</p>
+            <div class="course-content">
+                <img src="教材画像のURL" alt="マウス講座 教材">
+                <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+              </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
     </div>
 
     <!-- PowerPoint講座詳細ページ -->
-    <div id="powerpointPage" class="course-detail">
-        <h2>PowerPoint講座一覧</h2>
+    <div id="PowerPointPage" class="course-detail">
+        <h2>Word講座一覧</h2>
         <div class="course-list">
-            <h3>PowerPoint基礎</h3>
-            <p>スライド作成の基本を学びます。</p>
+            <h3>PowerPoint2016基礎講座</h3>
+            <p>PowerPointの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
         <div class="course-list">
-            <h3>PowerPoint応用</h3>
-            <p>スライド作成の応用を学びます。</p>
+            <h3>PowerPoint2016応用講座</h3>
+            <p>PowerPointの講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
             <p>時間数: 25時間</p>
             <p>受講料: 46,750（教材費別）</p>
         </div>
     </div>
 
-    <!-- インターネット講座詳細ページ -->
-    <div id="internetPage" class="course-detail">
-        <h2>インターネット活用講座一覧</h2>
+    <!-- 資格講座詳細ページ -->
+    <div id="MOSPage" class="course-detail">
+        <h2>MOS講座一覧</h2>
         <div class="course-list">
-            <h3>インターネット基礎</h3>
-            <p>安全なインターネット利用とメールの基本を学びます。</p>
-            <p>時間数: 8時間</p>
-            <p>受講料: 14,960円（教材費別)</p>
+            <h3>MOS Word365</h3>
+            <p>MOS Word365講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS Excel365</h3>
+            <p>MOS Excel365講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS PowerPoint365</h3>
+            <p>PowerPoint365講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS Word2019</h3>
+            <p>MOS Word2019講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS Word2019 Expert</h3>
+            <p>MOS Word2019 Expert講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS Excel2019</h3>
+            <p>MOS Excel2019講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS Excel2019 Expert</h3>
+            <p>MOS Excel2019 Expert講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
+        </div>
+        <div class="course-list">
+            <h3>MOS PowerPoint2019</h3>
+            <p>MOS PowerPoint201講座<br>
+                講座内容</p>
+                <div class="course-content">
+                    <img src="教材画像のURL" alt="マウス講座 教材">
+                    <iframe src="https://www.youtube.com/embed/AQvF8U3oTRg" allowfullscreen></iframe>
+                  </div>
+            <p>時間数: 25時間</p>
+            <p>受講料: 46,750（教材費別）</p>
         </div>
     </div>
-</div>
 
-<script>
-    // ページ切り替え機能
-    document.addEventListener('DOMContentLoaded', function() {
-        const courseItems = document.querySelectorAll('.course-item');
-        const backButton = document.getElementById('backButton');
-        const mainPage = document.getElementById('mainPage');
-        const coursePages = document.querySelectorAll('.course-detail');
-
-        // コース項目をクリックした時の処理
-        courseItems.forEach(item => {
-            item.addEventListener('click', function() {
-                const course = this.getAttribute('data-course');
-                const targetPage = document.getElementById(course + 'Page');
-
-                // メインページを非表示
-                mainPage.style.display = 'none';
-
-                // 対象のコースページを表示
-                coursePages.forEach(page => {
-                    page.style.display = 'none';
-                });
-                targetPage.style.display = 'block';
-
-                // 戻るボタンを表示
-                backButton.style.display = 'block';
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pages = {
+             main: document.getElementById('mainPage'),
+             PC: document.getElementById('PCPage'),
+             beginner: document.getElementById('beginnerPage'),
+             office: document.getElementById('officePage'),
+             Word: document.getElementById('WordPage'),
+             Excel: document.getElementById('ExcelPage'),
+             PowerPoint: document.getElementById('PowerPointPage'),
+             MOS: document.getElementById('MOSPage')
+            };
+            const backButton = document.getElementById('backButton');
+            const historyStack = [];
+        
+            function showPage(pageName) {
+                // すべてのページを非表示
+                Object.values(pages).forEach(page => page.style.display = 'none');
+        
+                // 指定ページを表示
+                if (pages[pageName]) {
+                    pages[pageName].style.display = 'block';
+                }
+        
+                // 戻るボタンの表示制御
+                backButton.style.display = historyStack.length > 0 ? 'block' : 'none';
+            }
+        
+            // トップページの選択肢（パソコン・スマホ）
+            document.querySelector('[data-course="PC"]').addEventListener('click', () => {
+                historyStack.push('main');
+                showPage('PC');
             });
-        });
-
-        // 戻るボタンをクリックした時の処理
-        backButton.addEventListener('click', function() {
-            // すべてのコースページを非表示
-            coursePages.forEach(page => {
-                page.style.display = 'none';
+        
+            // パソコン選択ページの講座選択（初心者）
+            document.querySelector('[data-course="beginner"]').addEventListener('click', () => {
+                historyStack.push('PC');
+                showPage('beginner');
             });
 
-            // メインページを表示
-            mainPage.style.display = 'block';
+            // office選択ページの講座選択（office）
+            document.querySelector('[data-course="office"]').addEventListener('click', () => {
+                historyStack.push('PC');
+                showPage('office');
+            });
 
-            // 戻るボタンを非表示
-            this.style.display = 'none';
+            // Word選択ページの講座選択（Word）
+            document.querySelector('[data-course="Word"]').addEventListener('click', () => {
+                historyStack.push('office');
+                showPage('Word');
+            });
+
+            // Excel選択ページの講座選択（Excel）
+            document.querySelector('[data-course="Excel"]').addEventListener('click', () => {
+                historyStack.push('office');
+                showPage('Excel');
+            });
+
+            // PowerPoint選択ページの講座選択（PowerPoint）
+            document.querySelector('[data-course="PowerPoint"]').addEventListener('click', () => {
+                historyStack.push('office');
+                showPage('PowerPoint');
+            });
+
+            // MOS選択ページの講座選択（MOS）
+            document.querySelector('[data-course="MOS"]').addEventListener('click', () => {
+                historyStack.push('PC');
+                showPage('MOS');
+            });
+        
+            // 戻るボタン
+            backButton.addEventListener('click', () => {
+                const previousPage = historyStack.pop();
+                showPage(previousPage);
+            });
+        
+            // 初期表示はmainPage
+            showPage('main');
         });
-    });
-</script>
+        </script>
 <script>
 // サービスワーカーの登録
 if ('serviceWorker' in navigator) {
